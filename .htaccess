@@ -3,3 +3,4 @@
 #RewriteRule .* works.html
 
 AddDefaultCharset utf-8
+AddType text/x-component .htc

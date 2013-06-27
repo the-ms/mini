@@ -1,0 +1,25 @@
+body {  }
+ #wrapper {margin:auto; width: 780px}
+	header {height: 30px; padding: 20px; background-color: #fff; text-align: center}
+		#logo h1 {margin: 0; font-weight: normal}
+	#top-panel {
+		margin: 10px 0; padding: 5px 20px; background-color: #eee; border: 1px dotted #ccc;
+		-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+		-webkit-box-shadow: #666 0px 2px 3px; -moz-box-shadow: #666 0px 2px 3px; box-shadow: #666 0px 2px 3px;
+	}
+	aside {float: left; width: 120px; padding: 20px}
+		nav .active {font-weight: bold}
+	section {
+		padding: 20px; margin-left: 180px; background-color: #f8f8f8; border: 1px dotted #ccc;
+		-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+		background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f8f8f8), to(#ffffff)); background: -webkit-linear-gradient(#f8f8f8, #ffffff); background: -moz-linear-gradient(#f8f8f8, #ffffff); background: -ms-linear-gradient(#f8f8f8, #ffffff); background: -o-linear-gradient(#f8f8f8, #ffffff); background: linear-gradient(#f8f8f8, #ffffff); -pie-background: linear-gradient(#f8f8f8, #ffffff);
+		behavior: url('/js/PIE.htc');
+	}
+		section h1:first-child {margin-top: 0}
+	#bottom-panel {
+		margin: 10px 0; padding: 5px 20px; background-color: #eee; border: 1px dotted #ccc; text-align: center;
+		-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+		-webkit-box-shadow: #666 0px 2px 3px; -moz-box-shadow: #666 0px 2px 3px; box-shadow: #666 0px 2px 3px;
+	}
+	footer {text-align: center; padding: 5px}
+		#counter {}

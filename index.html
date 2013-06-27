@@ -1,52 +1,51 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
-
+<!doctype html>
+<html>
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta http-equiv="Pragma" content="no-cache" />	
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>Site title :: Page title</title>
-	<base href="http://mini/" />
-	<link rel="stylesheet" href="css/reset.css" type="text/css">
-	<link rel="stylesheet" href="css/classes.css" type="text/css">
-	<link rel="stylesheet" href="css/typography.css" type="text/css" />
-	<link rel="stylesheet" href="css/design.css" type="text/css">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.toggleval.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	
-	<script type="text/javascript" src="js/jquery.lightbox.js"></script>
-	<link rel="stylesheet" href="css/jquery.lightbox.css" type="text/css" />
-	
+	<link rel="stylesheet" href="/css/reset.css" type="text/css">
+	<link rel="stylesheet" href="/css/classes.css" type="text/css">
+	<link rel="stylesheet" href="/css/site.css" type="text/css">
+	<!--[if lt IE 8 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+		<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="/js/html5.js"></script>
+	<![endif]-->
+	<script src="/js/css_browser_selector.js"></script>
 </head>
-<body id="body">
-	<div id="container">
-		<div id="header">
+<body>
+	<div id="wrapper">
+		<header>
 			<div id="logo">
-				<img src="images/logo.gif" alt=""/>
+				<img src="/i/logo.gif" alt="">
 				<h1>Site title</h1>
 			</div>
-		</div>
+		</header>
 		<div id="top-panel">
-			<form name="search-form" action="http://www.yandex.ru/yandsearch" method="get">
-				<input name="text" type="text" maxlength="255" value=""/><input type="submit" value="Найти"/>
-				<input type="hidden" name="stype" value="www" />
-				<input type="hidden" name="surl" value="http://" />
+			<form name="search" action="http://www.yandex.ru/yandsearch" method="get">
+				<input name="text" type="search" maxlength="255" value="" placeholder="Поиск в яндексе"><input type="submit" value="Найти">
+				<input type="hidden" name="stype" value="www">
+				<input type="hidden" name="surl" value="http://">
 			</form>		
 		</div>
-		<div id="sidebar">
-			<ul id="menu">
-				<li class="active">Главная</li>  
-				<li><a href="/module/">Модуль</a></li>
-			</ul>
-		</div>
-		<div id="content">
-			<h2>Page title</h2>
-			<p>
+		<aside>
+			<nav>
+				<ul class="ns">
+					<li class="active">Главная</li>  
+					<li><a href="/module/">Модуль</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<section>
+			<h1>Page title</h1>
+			<article>
 				Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
-			</p>
+			</article>
 			<fieldset>
 				<legend>FAQ</legend>
-				<ul>
+				<ul class="ns">
 					<li><a href="#q1">вопрос 1</a></li>
 					<li><a href="#q2">вопрос 2</a></li>
 					<li><a href="#q3">вопрос 3</a></li>
@@ -61,15 +60,12 @@
 					<dt id="q3"><b>вопрос 3</b></dt>
 					<dd>ответ 3</dd>
 				</dl>			
-			</fieldset>
-			<p><a href="/images/test.png" rel="lightbox"><img src="images/test.png" alt=""/></a></p>
-		</div>
+			</fieldset>			
+		</section>
 		<div id="bottom-panel">&#169; Copyright</div>
-		<div id="footer">
-			<a href="#"><img src="counter.jpg" alt="" border="0" width="81" height="15"/></a>
-		</div>
+		<footer>
+			<a href="#"><img src="/i/blank.gif" alt="" width="81" height="15"></a>
+		</footer>
 	</div>
-<script language="JavaScript" type="text/javascript" src="js/form.js"></script>
-<script language="JavaScript" type="text/javascript" src="js/validation.js"></script>
 </body>
 </html>
