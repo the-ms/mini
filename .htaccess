@@ -1,0 +1,5 @@
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !(works.html)
+#RewriteRule .* works.html
+
+AddDefaultCharset utf-8
